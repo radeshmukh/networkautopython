@@ -1,0 +1,10 @@
+ip access-list extended PERMIT-APs-TO-JOIN-ECA
+ permit udp any host 10.41.54.161 eq 5246
+ permit udp any host 10.41.54.161 eq 5247
+ deny   udp any any eq 5246
+ deny   udp any any eq 5247
+ permit udp any any
+ permit ip any any
+interface Vlan1033
+ ip access-group PERMIT-APs-TO-JOIN-ECA in 
+
