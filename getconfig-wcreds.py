@@ -10,17 +10,17 @@ import os
 from simplecrypt import encrypt, decrypt
 import json
 
-with open( '/ws/rdeshmu2-sjc/python/config-bkup/encr-creds', 'rb' ) as dc_in:
+with open( '/workspace/python/config-bkup/encr-creds', 'rb' ) as dc_in:
     device_creds_in = json.loads( decrypt( 'json.holds', dc_in.read() ) )
 username = device_creds_in[0]
 password = device_creds_in[1]
 
 # Open file with list of devices to take config backup
-with open('/ws/rdeshmu2-sjc/python/config-bkup/devices_file') as f:
+with open('/workspace/python/config-bkup/devices_file') as f:
     devices_list = f.read().splitlines()
 
 # Create directory for saving output            
-path = '/ws/rdeshmu2-sjc/alpha/backup/' + str(date.today())    
+path = '/workspace/network/backup/' + str(date.today())    
 # define the access rights    
 access_rights = 0o777    
 try:
