@@ -4,7 +4,7 @@ Automate workflows, config push, backups, handling of the network dynamics inclu
 
 ## Getting Started
 
-This project has few python scripts:
+This project has few python scripts for now:
 1. Copy image file to tftp server and then to network devices
 2. Encrypt device credentials file to use it for login to devices from other programs
 3. Push configuration to devices from config file
@@ -38,6 +38,5 @@ Add additional notes about how to deploy this on a live system
 ** Rahul Deshmukh ** - *Initial work* - [radeshmukh](https://github.com/radeshmukh)
 
 ## License
-Not licensed. Feel free to use them
 
 
